@@ -1,0 +1,24 @@
+{
+  "name": "genetic-plants",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "node ./node_modules/parcel/lib/bin.js src/index.html",
+    "build": "node ./node_modules/parcel/lib/bin.js build src/index.html --public-url ./",
+    "clean": "rm -rf ./dist ./parcel-cache"
+  },
+  "author": "Elian Cordoba",
+  "license": "MIT",
+  "staticFiles": {
+    "staticPath": "./assets"
+  },
+  "dependencies": {
+    "parcel": "^2.3.2",
+    "pixi.js": "~5.3.3"
+  },
+  "devDependencies": {
+    "parcel-reporter-static-files-copy": "^1.3.4",
+    "querystring-es3": "^0.2.1",
+    "rimraf": "~2.6.2"
+  }
+}
